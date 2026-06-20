@@ -1,0 +1,11 @@
+org 100h
+
+MOV AX, 0
+MOV CX, 10
+SUM_LOOP:
+    ADD AX, CX
+    LOOP SUM_LOOP
+
+MOV AH, 4CH
+INT 21H
+ret
